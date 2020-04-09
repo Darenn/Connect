@@ -1,14 +1,44 @@
+# ############################################################################ #
+# Copyright © 2020-present Darenn Keller <keller.darenn@gmail.com>
+# Licensed under the MIT License.
+# See LICENSE in the project root for license information.
+# ############################################################################ #
+
 extends Reference
 class_name LinkParser
 
-# Represents all informations gotten from a link paragraph
+# ############################################################################ #
+# Documentation
+# ############################################################################ #
+
+# Represents all informations got from a link paragraph in a story.
+# The story is parsed at contruction, filling all the public properties.
+
+# ############################################################################ #
+# Imports
+# ############################################################################ #
 
 const InkChoice = preload("res://addons/inkgd/runtime/choice.gd")
 const InkStory = preload("res://addons/inkgd/runtime/story.gd")
 
+# ############################################################################ #
+# Const Variables
+# ############################################################################ #
+
 const NO_ACTOR := "none"
 const NO_HUMOR := "none"
+
+# Commands begins with this symbol
 const COMMAND_SYMBOL := ">>>"
+
+# Symbols used by inline tags
+const INLINE_TAG_START_SYMBOL := "<"
+const INLINE_TAG_END_SYMBOL := ">"
+const INLINE_TAG_CLOSE_SYMBOL := "/"
+
+# ############################################################################ #
+# Public Properties
+# ############################################################################ #
 
 var text: String = ""
 var actor_id: String = NO_ACTOR
@@ -17,6 +47,11 @@ var tags: PoolStringArray
 var choices: Array = [] # Array<Choice>
 var is_command: bool = false
 var ink_story: InkStory
+var inline_tags: Array = [] #Array<String>
+
+# ############################################################################ #
+# Lifecycle
+# ############################################################################ #
 
 func _init(story: InkStory):
 	story = story
@@ -29,19 +64,28 @@ func _init(story: InkStory):
 		return
 	else:
 		_parse_actor_definition()
-		_convert_markdown_to_bbcode()
+		_convert_markdown_to_bbcode() # The RichTextLabel will use the bbcodes
+		_parse_inline_tags()
+	pass
 		
+# ############################################################################ #
+# Private Methods
+# ############################################################################ #
+
+# Convert all markdown tags to bbcode tags		
 func _convert_markdown_to_bbcode() -> void:
-	_convert_symbol_to_bbcode("***", "[b][i]", "[/i][/b]")
-	_convert_symbol_to_bbcode("**", "[b]", "[/b]")
-	_convert_symbol_to_bbcode("*", "[i]", "[/i]")
-	_convert_symbol_to_bbcode("___", "[b][i]", "[/i][/b]")
-	_convert_symbol_to_bbcode("__", "[b]", "[/b]")
-	_convert_symbol_to_bbcode("_", "[i]", "[/i]")
+	_convert_simple_tags_to_openclose_tags("***", "[b][i]", "[/i][/b]")
+	_convert_simple_tags_to_openclose_tags("**", "[b]", "[/b]")
+	_convert_simple_tags_to_openclose_tags("*", "[i]", "[/i]")
+	_convert_simple_tags_to_openclose_tags("___", "[b][i]", "[/i][/b]")
+	_convert_simple_tags_to_openclose_tags("__", "[b]", "[/b]")
+	_convert_simple_tags_to_openclose_tags("_", "[i]", "[/i]")
 
 	print(text)
-	
-func _convert_symbol_to_bbcode(from: String, to_open: String, to_close: String) -> void:
+
+# Convert all simple tags from text property to openclose tags 
+# Example : **bold** -> [b]bold[/b]
+func _convert_simple_tags_to_openclose_tags(from: String, to_open: String, to_close: String) -> void:
 	var splited_text := text.split(from, false)
 	text = ""
 	var splited_text_size := splited_text.size()
@@ -75,3 +119,26 @@ func _parse_actor_definition() -> void:
 			push_error("No end marker ')' found for humor.")
 	actor_id = actor_id.strip_edges()
 	actor_humor = actor_humor.strip_edges()
+
+# Finds all inline tags (</wait>) and adds their content to the inline_tags property.
+# Note that the index in the text is added to the end of their content to be used later.
+# TODO _parse_non_orphan_tags
+func _parse_inline_tags():
+	_parse_orphan_tags()
+	
+# Finds all orphane inline tags (</wait>) and adds their content to the inline_tags property.
+# Note that the index in the text is added to the end of their content to be used later.
+func _parse_orphan_tags():
+	var new_text := text
+	for i in range(text.length()):
+		var c := text[i]
+		if c == INLINE_TAG_START_SYMBOL:
+			if text[i + 1] == INLINE_TAG_CLOSE_SYMBOL:
+				var close_index := text.find(INLINE_TAG_END_SYMBOL, i + 1)
+				var length := close_index - i
+				var inline_tag := text.substr(i, length)
+				var inline_tag_command := inline_tag.substr(2, length - 1)
+				new_text.erase(i, length + 1)
+				inline_tag_command += " " + String(i)
+				inline_tags.append(inline_tag_command)
+	text = new_text
