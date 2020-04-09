@@ -1,11 +1,29 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://gui/dialog_box/dialog_box.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ink/ink_runner.gd" type="Script" id=2]
+[ext_resource path="res://ink/link_runner.gd" type="Script" id=3]
+[ext_resource path="res://gui/dialog_box/clever_label/clever_rich_text_label.gd" type="Script" id=4]
 
 [node name="main" type="Node2D"]
 
-[node name="InkRunner" type="Node" parent="."]
+[node name="LinkRunner" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="Label" type="RichTextLabel" parent="LinkRunner"]
+margin_left = 165.0
+margin_top = 94.0
+margin_right = 645.0
+margin_bottom = 265.0
+bbcode_text = "This is a test text"
+text = "This is a test text"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="InkRunner" type="Node" parent="LinkRunner"]
 script = ExtResource( 2 )
 path_to_compiled_ink = "res://ink/Story.json"
 
@@ -19,4 +37,5 @@ __meta__ = {
 }
 
 [node name="DialogBox" parent="Control" instance=ExtResource( 1 )]
+visible = false
 margin_top = -207.0

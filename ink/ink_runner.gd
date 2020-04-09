@@ -18,6 +18,11 @@ extends Node
 
 const InkRuntime = preload("res://addons/inkgd/runtime.gd")
 const Story = preload("res://addons/inkgd/runtime/story.gd")
+const LinkParser = preload("res://ink/link_parser.gd")
+
+# Signals
+
+signal story_is_loaded
 
 # ############################################################################ #
 # Exported Variables
@@ -38,8 +43,6 @@ var story: Story
 func _ready():
 	call_deferred("_init_ink")
 
-	var test = LInkParagraph.new("   lana   (   happy   ): This is a ***big*** test **sentence** to try the *convert* bbcode method")
-
 func _exit_tree():
 	call_deferred("_remove_runtime")
 	
@@ -47,13 +50,18 @@ func _exit_tree():
 # Public Methods
 # ############################################################################ #
 
-func continue_story() -> String:
+func can_continue() -> bool:
+	return story.can_continue;
+
+func continue_story() -> bool:
 	if story.can_continue:
-		var text: String = story.continue()
-		if story.current_choices.size() > 0:
-			story.choose_choice_index(0)
-		return text
-	return "end of story"
+		story.continue()
+		return true
+	else:
+		return false
+	
+func parse_story() -> LinkParser:
+	return LinkParser.new(story)
 
 # ############################################################################ #
 # Private Methods
@@ -69,6 +77,9 @@ func _load_story(ink_story_path):
 func _init_ink():
 	_add_runtime()
 	_load_story(path_to_compiled_ink)
+	emit_signal("story_is_loaded")
+#	var test = LinkParser.new("   lana   (   happy   ): This is a ***big*** test **sentence** to try the *convert* bbcode method", story.get_current_tags())
+
 
 func _add_runtime():
 	InkRuntime.init(get_tree().root)
