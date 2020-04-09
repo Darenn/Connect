@@ -16,9 +16,9 @@ func _on_ink_runner_story_loaded() -> void:
 	
 func _process(delta: float) -> void:
 	if (_is_story_loaded):
-		if(Input.is_action_pressed("ui_accept") and ink_runner.can_continue()):
+		if(Input.is_action_just_pressed("ui_accept") and ink_runner.can_continue()):
 			ink_runner.continue_story()
 			var parsed_story: LinkParser = ink_runner.parse_story()
-			$Label.text = parsed_story.text
+			$Label.display_text(parsed_story.text)
 		else:
 			pass

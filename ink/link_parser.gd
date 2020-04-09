@@ -32,10 +32,10 @@ func _init(story: InkStory):
 		_convert_markdown_to_bbcode()
 		
 func _convert_markdown_to_bbcode() -> void:
-	_convert_symbol_to_bbcode("***", "[b][i]", "[/b][/i]")
+	_convert_symbol_to_bbcode("***", "[b][i]", "[/i][/b]")
 	_convert_symbol_to_bbcode("**", "[b]", "[/b]")
 	_convert_symbol_to_bbcode("*", "[i]", "[/i]")
-	_convert_symbol_to_bbcode("___", "[b][i]", "[/b][/i]")
+	_convert_symbol_to_bbcode("___", "[b][i]", "[/i][/b]")
 	_convert_symbol_to_bbcode("__", "[b]", "[/b]")
 	_convert_symbol_to_bbcode("_", "[i]", "[/i]")
 

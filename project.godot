@@ -39,6 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Connect"
+run/main_scene="res://levels/main.tscn"
 config/icon="res://icons/icon.png"
 
 [autoload]
