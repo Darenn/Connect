@@ -25,7 +25,7 @@ const InkStory = preload("res://addons/inkgd/runtime/story.gd")
 # Const Variables
 # ############################################################################ #
 
-const NO_ACTOR := "none"
+const NO_CHARACTER := "none"
 const NO_HUMOR := "none"
 
 # Commands begins with this symbol
@@ -41,9 +41,9 @@ const INLINE_TAG_CLOSE_SYMBOL := "/"
 # ############################################################################ #
 
 var text: String = ""
-var actor_id: String = NO_ACTOR
-var actor_humor: String = NO_HUMOR
-var tags: PoolStringArray
+var character_id: String = NO_CHARACTER
+var character_humor: String = NO_HUMOR
+var tags: Array = [] # Array<String>
 var choices: Array = [] # Array<Choice>
 var is_command: bool = false
 var ink_story: InkStory
@@ -108,17 +108,17 @@ func _parse_actor_definition() -> void:
 	text = text.right(marker_index + 1)
 	
 	# Update the actor_id and actor_humor
-	actor_id = actor_definition
+	character_id = actor_definition
 	var humor_marker_index = actor_definition.find("(")
 	if humor_marker_index != -1:
-		actor_id = actor_definition.substr(0, humor_marker_index)
+		character_id = actor_definition.substr(0, humor_marker_index)
 		var end_marker_index = actor_definition.find(")")
 		if end_marker_index != -1:
-			actor_humor = actor_definition.substr(humor_marker_index + 1, end_marker_index - humor_marker_index - 1)
+			character_humor = actor_definition.substr(humor_marker_index + 1, end_marker_index - humor_marker_index - 1)
 		else:
 			push_error("No end marker ')' found for humor.")
-	actor_id = actor_id.strip_edges()
-	actor_humor = actor_humor.strip_edges()
+	character_id = character_id.strip_edges()
+	character_humor = character_humor.strip_edges()
 
 # Finds all inline tags (</wait>) and adds their content to the inline_tags property.
 # Note that the index in the text is added to the end of their content to be used later.

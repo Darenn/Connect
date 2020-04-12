@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/lucian_annoyed_eye_closed.png-780dbe5db84d8ba24027a6c3caa2c22c.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://gameplay/entities/actors/lucian/Annoyed/lucian_annoyed_eye_closed.png"
+dest_files=[ "res://.import/lucian_annoyed_eye_closed.png-780dbe5db84d8ba24027a6c3caa2c22c.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

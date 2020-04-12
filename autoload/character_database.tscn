@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://autoload/character_database.gd" type="Script" id=1]
+[ext_resource path="res://gameplay/entities/actors/lana/lana_character.tres" type="Resource" id=2]
+
+[node name="CharacterDatabase" type="Node"]
+script = ExtResource( 1 )
+_character_data_by_id = {
+"lana": ExtResource( 2 )
+}

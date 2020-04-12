@@ -1,6 +1,6 @@
-extends RichTextLabel
+extends Control
 
-class_name CleverRichTextLabel
+
 
 enum DisplayMode {
 	INSTANT, # Text is displayed instant
@@ -16,9 +16,9 @@ func _ready():
 
 # Display the given text at speed character per second
 func display_text(text: String, speed: int = 10) -> void:
-	clear()
-	visible_characters = 0
-	append_bbcode(text)
+	$label.clear()
+	$label.visible_characters = 0
+	$label.append_bbcode(text)
 	$Tween.interpolate_property(self, "visible_characters", 0, text.length(),
 			text.length() / speed, Tween.TRANS_QUAD, Tween.EASE_OUT)
 	$Tween.start()

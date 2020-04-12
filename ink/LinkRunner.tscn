@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ink/ink_runner.gd" type="Script" id=1]
+[ext_resource path="res://ink/dialog_runner.gd" type="Script" id=2]
+
+
+[node name="LinkRunner" type="Node"]
+script = ExtResource( 2 )
+
+[node name="InkRunner" type="Node" parent="."]
+script = ExtResource( 1 )
+path_to_compiled_ink = "res://ink/Story.json"

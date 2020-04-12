@@ -1,0 +1,31 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://gameplay/entities/character.gd" type="Script" id=1]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource( 1 )
+id = "lana"
+displayed_name = "Lana"
+color = Color( 0.854902, 0.0980392, 0.941176, 1 )
+_characters_texture_set_by_humor = {
+"amused": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/amused/lana_amused_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/amused/lana_amused_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/amused/lana_amused_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/amused/lana_amused_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/amused/lana_amused_mouth_open.png" ))
+,
+"angry": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/angry/lana_angry_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/angry/lana_angry_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/angry/lana_angry_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/angry/lana_angry_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/angry/lana_angry_mouth_open.png" ))
+,
+"annoyed": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/annoyed/lana_annoyed_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/annoyed/lana_annoyed_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/annoyed/lana_annoyed_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/annoyed/lana_annoyed_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/annoyed/lana_annoyed_mouth_open.png" ))
+,
+"happy": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/happy/lana_happy_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/happy/lana_happy_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/happy/lana_happy_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/happy/lana_happy_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/happy/lana_happy_mouth_open.png" ))
+,
+"neutral": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/neutral/lana_neutral_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/neutral/lana_neutral_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/neutral/lana_neutral_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/neutral/lana_neutral_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/neutral/lana_neutral_mouth_open.png" ))
+,
+"sad": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/sad/lana_sad_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/sad/lana_sad_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/sad/lana_sad_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/sad/lana_sad_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/sad/lana_sad_mouth_open.png" ))
+,
+"terrified": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/terrified/lana_terrified_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/terrified/lana_terrified_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/terrified/lana_terrified_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/terrified/lana_terrified_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/terrified/lana_terrified_mouth_open.png" ))
+,
+"thoughtful": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/thoughtful/lana_thoughtful_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/thoughtful/lana_thoughtful_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/thoughtful/lana_thoughtful_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/thoughtful/lana_thoughtful_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/thoughtful/lana_thoughtful_mouth_open.png" ))
+,
+"worried": Object(Reference,"script":null,"texture_base":Resource( "res://gameplay/entities/actors/lana/sprites/worried/lana_worried_base.png" ),"texture_eye_closed":Resource( "res://gameplay/entities/actors/lana/sprites/worried/lana_worried_eye_closed.png" ),"texture_eye_open":Resource( "res://gameplay/entities/actors/lana/sprites/worried/lana_worried_eye_open.png" ),"texture_mouth_closed":Resource( "res://gameplay/entities/actors/lana/sprites/worried/lana_worried_mouth_closed.png" ),"texture_mouth_open":Resource( "res://gameplay/entities/actors/lana/sprites/worried/lana_worried_mouth_open.png" ))
+
+}
+MyButton = false

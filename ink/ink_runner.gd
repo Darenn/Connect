@@ -5,12 +5,15 @@
 # ############################################################################ #
 
 extends Node
+class_name InkRunner
 
 # ############################################################################ #
 # Documentation
 # ############################################################################ #
 
-# InkRunner is an interface with the InkGD addon to manipulate ink stories.
+# InkRunner is an interface with the InkGD addon to manipulate ink stories and 
+# setup the InkRuntime env.
+# The Dialog UI should listen to the signals to display the dialog.
 
 # ############################################################################ #
 # Imports
@@ -18,11 +21,15 @@ extends Node
 
 const InkRuntime = preload("res://addons/inkgd/runtime.gd")
 const Story = preload("res://addons/inkgd/runtime/story.gd")
-const LinkParser = preload("res://ink/link_parser.gd")
 
-# Signals
+# ############################################################################ #
+# Imports
+# ############################################################################ #
 
-signal story_is_loaded
+signal story_is_loaded()
+signal on_dialog_paragraph_received(paragraph, actor_id)
+signal on_dialog_started()
+signal on_dialog_finished()
 
 # ############################################################################ #
 # Exported Variables
@@ -46,6 +53,10 @@ func _ready():
 func _exit_tree():
 	call_deferred("_remove_runtime")
 	
+func _process(delta: float) -> void:
+	if(Input.is_action_just_pressed("ui_accept")):
+		_process_parsed_story()
+	
 # ############################################################################ #
 # Public Methods
 # ############################################################################ #
@@ -67,6 +78,20 @@ func parse_story() -> LinkParser:
 # Private Methods
 # ############################################################################ #
 
+func _process_parsed_story():
+	if not continue_story():
+		emit_signal("on_dialog_finished")
+		return
+	var parsed_story: LinkParser = parse_story()
+	if parsed_story.is_command():
+		CommandRunner.run_command(parsed_story.text)
+		_process_parsed_story()
+		return
+	emit_signal("on_dialog_paragraph_received", 
+			parsed_story.text, parsed_story.character_id)
+	for tag in parsed_story.tags + parsed_story.inline_tags:
+		CommandRunner.run_command(tag)
+
 func _load_story(ink_story_path):
 	var ink_story = File.new()
 	ink_story.open(ink_story_path, File.READ)
@@ -78,8 +103,6 @@ func _init_ink():
 	_add_runtime()
 	_load_story(path_to_compiled_ink)
 	emit_signal("story_is_loaded")
-#	var test = LinkParser.new("   lana   (   happy   ): This is a ***big*** test **sentence** to try the *convert* bbcode method", story.get_current_tags())
-
 
 func _add_runtime():
 	InkRuntime.init(get_tree().root)

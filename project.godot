@@ -9,15 +9,40 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "RichTextLabel",
-"class": "CleverRichTextLabel",
+"base": "TextureRect",
+"class": "Actor",
 "language": "GDScript",
-"path": "res://gui/dialog_box/clever_label/clever_rich_text_label.gd"
+"path": "res://gameplay/entities/actors/actor.gd"
+}, {
+"base": "Resource",
+"class": "Character",
+"language": "GDScript",
+"path": "res://gameplay/entities/character.gd"
+}, {
+"base": "Control",
+"class": "DialogBox",
+"language": "GDScript",
+"path": "res://gui/dialog_box/dialog_box.gd"
+}, {
+"base": "Control",
+"class": "DialogGUI",
+"language": "GDScript",
+"path": "res://gui/DialogGUI.gd"
+}, {
+"base": "Node",
+"class": "DialogRunner",
+"language": "GDScript",
+"path": "res://ink/dialog_runner.gd"
 }, {
 "base": "RichTextEffect",
 "class": "FadeInRichTextEffect",
 "language": "GDScript",
 "path": "res://gui/rich_text_effects/fade_in_rich_text_effect.gd"
+}, {
+"base": "Node",
+"class": "InkRunner",
+"language": "GDScript",
+"path": "res://ink/ink_runner.gd"
 }, {
 "base": "Reference",
 "class": "LinkParser",
@@ -30,8 +55,13 @@ _global_script_classes=[ {
 "path": "res://gui/rich_text_effects/typing_rich_text_effect.gd"
 } ]
 _global_script_class_icons={
-"CleverRichTextLabel": "",
+"Actor": "",
+"Character": "",
+"DialogBox": "",
+"DialogGUI": "",
+"DialogRunner": "",
 "FadeInRichTextEffect": "",
+"InkRunner": "",
 "LinkParser": "",
 "TypingRichTextEffect": ""
 }
@@ -44,7 +74,13 @@ config/icon="res://icons/icon.png"
 
 [autoload]
 
-CommandRunner="*res://ink/command_runner.gd"
+CommandRunner="*res://autoload/command_runner.gd"
+CharactersDB="*res://autoload/character_database.tscn"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
 
 [editor_plugins]
 
