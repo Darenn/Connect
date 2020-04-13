@@ -53,7 +53,7 @@ var inline_tags: Array = [] #Array<String>
 # Lifecycle
 # ############################################################################ #
 
-func _init(story: InkStory):
+func _init(story: InkStory).():
 	story = story
 	text = story.get_current_text().strip_edges()
 	tags = story.get_current_tags()
@@ -115,8 +115,8 @@ func _parse_actor_definition() -> void:
 			character_humor = actor_definition.substr(humor_marker_index + 1, end_marker_index - humor_marker_index - 1)
 		else:
 			push_error("No end marker ')' found for humor.")
-	character_id = character_id.strip_edges()
-	character_humor = character_humor.strip_edges()
+	character_id = character_id.strip_edges().to_lower()
+	character_humor = character_humor.strip_edges().to_lower()
 
 # Finds all inline tags (</wait>) and adds their content to the inline_tags property.
 # Note that the index in the text is added to the end of their content to be used later.

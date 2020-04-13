@@ -19,3 +19,5 @@ export(Color) var color
 # _characters_texture_set_by_humor["angry"] -> textures for angry humor
 export(Dictionary) var _characters_texture_set_by_humor: Dictionary = {}
 
+func get_texture_set(humor_id: String) -> CharacterTextureSet:
+	return _characters_texture_set_by_humor[humor_id]

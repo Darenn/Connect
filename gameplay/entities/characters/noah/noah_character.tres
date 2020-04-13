@@ -1,150 +1,163 @@
-[gd_resource type="Resource" load_steps=69 format=2]
+[gd_resource type="Resource" load_steps=75 format=2]
 
 [ext_resource path="res://gameplay/entities/character_texture_set.gd" type="Script" id=1]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tearful/amaryllis_Tearful_mouth_open.png" type="Texture" id=2]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tensed/amaryllis_Tensed_eye_closed.png" type="Texture" id=3]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Terrified/amaryllis_Terrified_mouth_closed.png" type="Texture" id=4]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Terrified/amaryllis_Terrified_mouth_open.png" type="Texture" id=5]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Wink/amaryllis_Wink_base.png" type="Texture" id=6]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Thoughtful/amaryllis_Thoughtful_eye_closed.png" type="Texture" id=7]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Wink/amaryllis_Wink_eye_open.png" type="Texture" id=8]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tensed/amaryllis_Tensed_base.png" type="Texture" id=9]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Wink/amaryllis_Wink_eye_closed.png" type="Texture" id=10]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Wink/amaryllis_Wink_mouth_closed.png" type="Texture" id=11]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Thoughtful/amaryllis_Thoughtful_base.png" type="Texture" id=12]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Thoughtful/amaryllis_Thoughtful_mouth_open.png" type="Texture" id=13]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Scared/amaryllis_Scared_mouth_open.png" type="Texture" id=14]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tearful/amaryllis_Tearful_mouth_closed.png" type="Texture" id=15]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Thoughtful/amaryllis_Thoughtful_eye_open.png" type="Texture" id=16]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tensed/amaryllis_Tensed_mouth_closed.png" type="Texture" id=17]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Thoughtful/amaryllis_Thoughtful_mouth_closed.png" type="Texture" id=18]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tearful/amaryllis_Tearful_eye_closed.png" type="Texture" id=19]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tensed/amaryllis_Tensed_eye_open.png" type="Texture" id=20]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tearful/amaryllis_Tearful_eye_open.png" type="Texture" id=21]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Scared/amaryllis_Scared_mouth_closed.png" type="Texture" id=22]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Wink/amaryllis_Wink_mouth_open.png" type="Texture" id=23]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tensed/amaryllis_Tensed_mouth_open.png" type="Texture" id=24]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Scared/amaryllis_Scared_eye_open.png" type="Texture" id=25]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Tearful/amaryllis_Tearful_base.png" type="Texture" id=26]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Terrified/amaryllis_Terrified_base.png" type="Texture" id=27]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Terrified/amaryllis_Terrified_eye_closed.png" type="Texture" id=28]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Terrified/amaryllis_Terrified_eye_open.png" type="Texture" id=29]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Crying/amaryllis_Crying_base.png" type="Texture" id=30]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Embarrassed/amaryllis_Embarrassed_base.png" type="Texture" id=31]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Crying/amaryllis_Crying_mouth_open.png" type="Texture" id=32]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Crying/amaryllis_Crying_eye_open.png" type="Texture" id=33]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Embarrassed/amaryllis_Embarrassed_eye_open.png" type="Texture" id=34]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Embarrassed/amaryllis_Embarrassed_eye_closed.png" type="Texture" id=35]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Embarrassed/amaryllis_Embarrassed_mouth_closed.png" type="Texture" id=36]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Crying/amaryllis_Crying_eye_closed.png" type="Texture" id=37]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Angry/amaryllis_Angry_base.png" type="Texture" id=38]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Angry/amaryllis_Angry_eye_open.png" type="Texture" id=39]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Angry/amaryllis_Angry_mouth_closed.png" type="Texture" id=40]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Crying/amaryllis_Crying_mouth_closed.png" type="Texture" id=41]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Angry/amaryllis_Angry_mouth_open.png" type="Texture" id=42]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Angry/amaryllis_Angry_eye_closed.png" type="Texture" id=43]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Neutral/amaryllis_Neutral_eye_open.png" type="Texture" id=44]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Neutral/amaryllis_Neutral_mouth_closed.png" type="Texture" id=45]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Scared/amaryllis_Scared_eye_closed.png" type="Texture" id=46]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Happy/amaryllis_Happy_eye_open.png" type="Texture" id=47]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Neutral/amaryllis_Neutral_eye_closed.png" type="Texture" id=48]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Happy/amaryllis_Happy_mouth_closed.png" type="Texture" id=49]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Neutral/amaryllis_Neutral_mouth_open.png" type="Texture" id=50]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Scared/amaryllis_Scared_base.png" type="Texture" id=51]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Embarrassed/amaryllis_Embarrassed_mouth_open.png" type="Texture" id=52]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Happy/amaryllis_Happy_mouth_open.png" type="Texture" id=53]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Happy/amaryllis_Happy_base.png" type="Texture" id=54]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Neutral/amaryllis_Neutral_base.png" type="Texture" id=55]
-[ext_resource path="res://gameplay/entities/actors/amaryllis/sprites/Happy/amaryllis_Happy_eye_closed.png" type="Texture" id=56]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/wary/noah_wary_mouth_open.png" type="Texture" id=2]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/scared/noah_scared_eye_closed.png" type="Texture" id=3]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/worried/noah_worried_eye_closed.png" type="Texture" id=4]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/worried/noah_worried_eye_open.png" type="Texture" id=5]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/scared/noah_scared_mouth_closed.png" type="Texture" id=6]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/worried/noah_worried_mouth_closed.png" type="Texture" id=7]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/wary/noah_wary_eye_open.png" type="Texture" id=8]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/wary/noah_wary_mouth_closed.png" type="Texture" id=9]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/wary/noah_wary_eye_closed.png" type="Texture" id=10]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/scared/noah_scared_eye_open.png" type="Texture" id=11]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/worried/noah_worried_base.png" type="Texture" id=12]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/scared/noah_scared_mouth_open.png" type="Texture" id=13]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/worried/noah_worried_mouth_open.png" type="Texture" id=14]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/wary/noah_wary_base.png" type="Texture" id=15]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/hilarious/noah_hilarious_eye_closed.png" type="Texture" id=16]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/neutral/noah_neutral_eye_open.png" type="Texture" id=17]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/relax/noah_relax_base.png" type="Texture" id=18]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/relax/noah_relax_eye_open.png" type="Texture" id=19]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/hilarious/noah_hilarious_mouth_open.png" type="Texture" id=20]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/neutral/noah_neutral_eye_closed.png" type="Texture" id=21]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/hilarious/noah_hilarious_eye_open.png" type="Texture" id=22]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/neutral/noah_neutral_mouth_open.png" type="Texture" id=23]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/relax/noah_relax_eye_closed.png" type="Texture" id=24]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/relax/noah_relax_mouth_closed.png" type="Texture" id=25]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/relax/noah_relax_mouth_open.png" type="Texture" id=26]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/scared/noah_scared_base.png" type="Texture" id=27]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/neutral/noah_neutral_mouth_closed.png" type="Texture" id=28]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/neutral/noah_neutral_base.png" type="Texture" id=29]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/hilarious/noah_hilarious_mouth_closed.png" type="Texture" id=30]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/happy/noah_happy_base.png" type="Texture" id=31]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/happy/noah_happy_eye_closed.png" type="Texture" id=32]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/annoyed/noah_annoyed_mouth_open.png" type="Texture" id=33]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/happy/noah_happy_eye_open.png" type="Texture" id=34]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/angry/noah_angry_mouth_open.png" type="Texture" id=35]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/amused/noah_amused_mouth_open.png" type="Texture" id=36]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/amused/noah_amused_mouth_closed.png" type="Texture" id=37]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/blush/noah_blush_base.png" type="Texture" id=38]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/furious/noah_furious_mouth_closed.png" type="Texture" id=39]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/happy/noah_happy_mouth_closed.png" type="Texture" id=40]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/amused/noah_amused_base.png" type="Texture" id=41]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/happy/noah_happy_mouth_open.png" type="Texture" id=42]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/hilarious/noah_hilarious_base.png" type="Texture" id=43]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/angry/noah_angry_eye_closed.png" type="Texture" id=44]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/furious/noah_furious_mouth_open.png" type="Texture" id=45]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/annoyed/noah_annoyed_mouth_closed.png" type="Texture" id=46]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/amused/noah_amused_eye_closed.png" type="Texture" id=47]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/annoyed/noah_annoyed_base.png" type="Texture" id=48]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/angry/noah_angry_mouth_closed.png" type="Texture" id=49]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/annoyed/noah_annoyed_eye_open.png" type="Texture" id=50]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/blush/noah_blush_mouth_closed.png" type="Texture" id=51]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/angry/noah_angry_base.png" type="Texture" id=52]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/amused/noah_amused_eye_open.png" type="Texture" id=53]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/angry/noah_angry_eye_open.png" type="Texture" id=54]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/blush/noah_blush_eye_closed.png" type="Texture" id=55]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/furious/noah_furious_base.png" type="Texture" id=56]
 [ext_resource path="res://gameplay/entities/character.gd" type="Script" id=57]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/furious/noah_furious_eye_closed.png" type="Texture" id=58]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/furious/noah_furious_eye_open.png" type="Texture" id=59]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/blush/noah_blush_mouth_open.png" type="Texture" id=60]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/blush/noah_blush_eye_open.png" type="Texture" id=61]
+[ext_resource path="res://gameplay/entities/characters/noah/textures/annoyed/noah_annoyed_eye_closed.png" type="Texture" id=62]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
-texture_base = ExtResource( 38 )
-texture_eye_closed = ExtResource( 43 )
-texture_eye_open = ExtResource( 39 )
-texture_mouth_closed = ExtResource( 40 )
-texture_mouth_open = ExtResource( 42 )
+texture_base = ExtResource( 41 )
+texture_eye_closed = ExtResource( 47 )
+texture_eye_open = ExtResource( 53 )
+texture_mouth_closed = ExtResource( 37 )
+texture_mouth_open = ExtResource( 36 )
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 1 )
-texture_base = ExtResource( 30 )
-texture_eye_closed = ExtResource( 37 )
-texture_eye_open = ExtResource( 33 )
-texture_mouth_closed = ExtResource( 41 )
-texture_mouth_open = ExtResource( 32 )
+texture_base = ExtResource( 52 )
+texture_eye_closed = ExtResource( 44 )
+texture_eye_open = ExtResource( 54 )
+texture_mouth_closed = ExtResource( 49 )
+texture_mouth_open = ExtResource( 35 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 1 )
-texture_base = ExtResource( 31 )
-texture_eye_closed = ExtResource( 35 )
-texture_eye_open = ExtResource( 34 )
-texture_mouth_closed = ExtResource( 36 )
-texture_mouth_open = ExtResource( 52 )
+texture_base = ExtResource( 48 )
+texture_eye_closed = ExtResource( 62 )
+texture_eye_open = ExtResource( 50 )
+texture_mouth_closed = ExtResource( 46 )
+texture_mouth_open = ExtResource( 33 )
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 1 )
-texture_base = ExtResource( 54 )
-texture_eye_closed = ExtResource( 56 )
-texture_eye_open = ExtResource( 47 )
-texture_mouth_closed = ExtResource( 49 )
-texture_mouth_open = ExtResource( 53 )
+texture_base = ExtResource( 38 )
+texture_eye_closed = ExtResource( 55 )
+texture_eye_open = ExtResource( 61 )
+texture_mouth_closed = ExtResource( 51 )
+texture_mouth_open = ExtResource( 60 )
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 1 )
-texture_base = ExtResource( 55 )
-texture_eye_closed = ExtResource( 48 )
-texture_eye_open = ExtResource( 44 )
-texture_mouth_closed = ExtResource( 45 )
-texture_mouth_open = ExtResource( 50 )
+texture_base = ExtResource( 56 )
+texture_eye_closed = ExtResource( 58 )
+texture_eye_open = ExtResource( 59 )
+texture_mouth_closed = ExtResource( 39 )
+texture_mouth_open = ExtResource( 45 )
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 1 )
-texture_base = ExtResource( 51 )
-texture_eye_closed = ExtResource( 46 )
-texture_eye_open = ExtResource( 25 )
-texture_mouth_closed = ExtResource( 22 )
-texture_mouth_open = ExtResource( 14 )
+texture_base = ExtResource( 31 )
+texture_eye_closed = ExtResource( 32 )
+texture_eye_open = ExtResource( 34 )
+texture_mouth_closed = ExtResource( 40 )
+texture_mouth_open = ExtResource( 42 )
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 1 )
-texture_base = ExtResource( 26 )
-texture_eye_closed = ExtResource( 19 )
-texture_eye_open = ExtResource( 21 )
-texture_mouth_closed = ExtResource( 15 )
-texture_mouth_open = ExtResource( 2 )
+texture_base = ExtResource( 43 )
+texture_eye_closed = ExtResource( 16 )
+texture_eye_open = ExtResource( 22 )
+texture_mouth_closed = ExtResource( 30 )
+texture_mouth_open = ExtResource( 20 )
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 1 )
-texture_base = ExtResource( 9 )
-texture_eye_closed = ExtResource( 3 )
-texture_eye_open = ExtResource( 20 )
-texture_mouth_closed = ExtResource( 17 )
-texture_mouth_open = ExtResource( 24 )
+texture_base = ExtResource( 29 )
+texture_eye_closed = ExtResource( 21 )
+texture_eye_open = ExtResource( 17 )
+texture_mouth_closed = ExtResource( 28 )
+texture_mouth_open = ExtResource( 23 )
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 1 )
-texture_base = ExtResource( 27 )
-texture_eye_closed = ExtResource( 28 )
-texture_eye_open = ExtResource( 29 )
-texture_mouth_closed = ExtResource( 4 )
-texture_mouth_open = ExtResource( 5 )
+texture_base = ExtResource( 18 )
+texture_eye_closed = ExtResource( 24 )
+texture_eye_open = ExtResource( 19 )
+texture_mouth_closed = ExtResource( 25 )
+texture_mouth_open = ExtResource( 26 )
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 1 )
-texture_base = ExtResource( 12 )
-texture_eye_closed = ExtResource( 7 )
-texture_eye_open = ExtResource( 16 )
-texture_mouth_closed = ExtResource( 18 )
+texture_base = ExtResource( 27 )
+texture_eye_closed = ExtResource( 3 )
+texture_eye_open = ExtResource( 11 )
+texture_mouth_closed = ExtResource( 6 )
 texture_mouth_open = ExtResource( 13 )
 
 [sub_resource type="Resource" id=11]
 script = ExtResource( 1 )
-texture_base = ExtResource( 6 )
+texture_base = ExtResource( 15 )
 texture_eye_closed = ExtResource( 10 )
 texture_eye_open = ExtResource( 8 )
-texture_mouth_closed = ExtResource( 11 )
-texture_mouth_open = ExtResource( 23 )
+texture_mouth_closed = ExtResource( 9 )
+texture_mouth_open = ExtResource( 2 )
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 1 )
+texture_base = ExtResource( 12 )
+texture_eye_closed = ExtResource( 4 )
+texture_eye_open = ExtResource( 5 )
+texture_mouth_closed = ExtResource( 7 )
+texture_mouth_open = ExtResource( 14 )
 
 [resource]
 script = ExtResource( 57 )
@@ -152,15 +165,16 @@ id = "noah"
 displayed_name = "Noah"
 color = Color( 0.14902, 0.564706, 0.113725, 1 )
 _characters_texture_set_by_humor = {
-"Angry": SubResource( 1 ),
-"Crying": SubResource( 2 ),
-"Embarrassed": SubResource( 3 ),
-"Happy": SubResource( 4 ),
-"Neutral": SubResource( 5 ),
-"Scared": SubResource( 6 ),
-"Tearful": SubResource( 7 ),
-"Tensed": SubResource( 8 ),
-"Terrified": SubResource( 9 ),
-"Thoughtful": SubResource( 10 ),
-"Wink": SubResource( 11 )
+"amused": SubResource( 1 ),
+"angry": SubResource( 2 ),
+"annoyed": SubResource( 3 ),
+"blush": SubResource( 4 ),
+"furious": SubResource( 5 ),
+"happy": SubResource( 6 ),
+"hilarious": SubResource( 7 ),
+"neutral": SubResource( 8 ),
+"relax": SubResource( 9 ),
+"scared": SubResource( 10 ),
+"wary": SubResource( 11 ),
+"worried": SubResource( 12 )
 }

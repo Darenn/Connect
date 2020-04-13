@@ -18,6 +18,10 @@ onready var label_tween: Tween = $Background/RichTextLabel/Tween
 
 func _ready():
 	pass
+	
+	
+func clear():
+	label.clear()
 
 # Display the given text at speed character per second
 func display_text(text: String, speed: int = 10) -> void:

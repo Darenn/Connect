@@ -3,8 +3,13 @@ INCLUDE Run1/PrologueOpeningScene.ink
 INCLUDE Run1/Day1/AwakeningLana.ink
 INCLUDE Run1/Day1/FirstEncounter.ink
 
-
+>>> change_layout default lana charlie
 Lana(happy): Hey you!
+Lana(sad): My name is Lana.
+Charlie(neutral): Mine is charlie
+>>> change_layout default kendall none noah
+Kendal(annoyed): I will die very soon...
+Noah: Yes, me too.
 
 
 

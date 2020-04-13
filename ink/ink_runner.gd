@@ -27,7 +27,7 @@ const Story = preload("res://addons/inkgd/runtime/story.gd")
 # ############################################################################ #
 
 signal story_is_loaded()
-signal on_dialog_paragraph_received(paragraph, actor_id)
+signal on_dialog_paragraph_received(paragraph, actor_id, humor_id)
 signal on_dialog_started()
 signal on_dialog_finished()
 
@@ -90,8 +90,8 @@ func _process_parsed_story():
 	for tag in parsed_story.tags + parsed_story.inline_tags:
 		CommandRunner.run_command(tag)
 	emit_signal("on_dialog_paragraph_received", 
-		parsed_story.text, parsed_story.character_id)
-
+		parsed_story.text, parsed_story.character_id,
+		parsed_story.character_humor)
 
 
 func _load_story(ink_story_path):
@@ -100,7 +100,6 @@ func _load_story(ink_story_path):
 	var content = ink_story.get_as_text()
 	ink_story.close()	
 	self.story = Story.new(content)
-
 
 func _init_ink():
 	_add_runtime()

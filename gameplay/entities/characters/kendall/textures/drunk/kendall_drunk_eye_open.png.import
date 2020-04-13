@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kendall_drunk_eye_closed.png-abbb65aa45a0d740d6d53b0a7a209f42.stex"
+path="res://.import/kendall_drunk_eye_open.png-65e3df1494ba3ee27173b8d4222b1cb8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gameplay/entities/characters/kendall/textures/drunk lol/kendall_drunk_eye_closed.png"
-dest_files=[ "res://.import/kendall_drunk_eye_closed.png-abbb65aa45a0d740d6d53b0a7a209f42.stex" ]
+source_file="res://gameplay/entities/characters/kendall/textures/drunk/kendall_drunk_eye_open.png"
+dest_files=[ "res://.import/kendall_drunk_eye_open.png-65e3df1494ba3ee27173b8d4222b1cb8.stex" ]
 
 [params]
 
