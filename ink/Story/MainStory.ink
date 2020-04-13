@@ -8,7 +8,7 @@ Lana(happy): Hey you!
 Lana(sad): My name is Lana.
 Charlie(neutral): Mine is charlie
 >>> change_layout default kendall none noah
-Kendal(annoyed): I will die very soon...
+Kendall(annoyed): I will die very soon...
 Noah: Yes, me too.
 
 

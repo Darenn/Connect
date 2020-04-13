@@ -1,13 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://gui/dialog_gui/actor/actor.gd" type="Script" id=1]
 [ext_resource path="res://gameplay/entities/characters/amaryllis/textures/angry/amaryllis_angry_base.png" type="Texture" id=2]
+[ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.tscn" type="PackedScene" id=3]
 
 [node name="Actor" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -1197.0
-margin_bottom = 908.0
+margin_bottom = 926.0
 grow_vertical = 2
 rect_clip_content = true
 script = ExtResource( 1 )
@@ -20,3 +20,50 @@ margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 2 )
 stretch_mode = 4
+
+[node name="DialogBoxPositions" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogBoxPosition0" parent="DialogBoxPositions" instance=ExtResource( 3 )]
+visible = false
+anchor_bottom = 1.0
+margin_left = 545.029
+margin_top = 108.299
+margin_right = 1197.03
+margin_bottom = -1593.7
+
+[node name="DialogBoxPosition1" parent="DialogBoxPositions" instance=ExtResource( 3 )]
+visible = false
+anchor_bottom = 1.0
+margin_left = 394.395
+margin_top = 521.147
+margin_right = 1046.4
+margin_bottom = -1180.85
+
+[node name="DialogBoxPosition2" parent="DialogBoxPositions" instance=ExtResource( 3 )]
+visible = false
+anchor_bottom = 1.0
+margin_left = -501.674
+margin_top = 519.241
+margin_right = 150.326
+margin_bottom = -1182.76
+
+[node name="DialogBoxPosition3" parent="DialogBoxPositions" instance=ExtResource( 3 )]
+visible = false
+anchor_bottom = 1.0
+margin_left = -553.045
+margin_top = 101.417
+margin_right = 98.9546
+margin_bottom = -1600.58
+
+[node name="DialogBoxPosition4" parent="DialogBoxPositions" instance=ExtResource( 3 )]
+visible = false
+anchor_bottom = 1.0
+margin_left = 29.1687
+margin_top = -258.186
+margin_right = 681.169
+margin_bottom = -1960.19

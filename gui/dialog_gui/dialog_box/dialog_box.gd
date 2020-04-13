@@ -29,5 +29,5 @@ func display_text(text: String, speed: int = 10) -> void:
 	label.visible_characters = 0
 	label.append_bbcode(text)
 	label_tween.interpolate_property(label, "visible_characters", 0, text.length(),
-			text.length() / speed, Tween.TRANS_QUAD, Tween.EASE_OUT)
+			text.length() / speed, Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	label_tween.start()
