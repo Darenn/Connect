@@ -83,14 +83,16 @@ func _process_parsed_story():
 		emit_signal("on_dialog_finished")
 		return
 	var parsed_story: LinkParser = parse_story()
-	if parsed_story.is_command():
+	if parsed_story.is_command:
 		CommandRunner.run_command(parsed_story.text)
 		_process_parsed_story()
 		return
-	emit_signal("on_dialog_paragraph_received", 
-			parsed_story.text, parsed_story.character_id)
 	for tag in parsed_story.tags + parsed_story.inline_tags:
 		CommandRunner.run_command(tag)
+	emit_signal("on_dialog_paragraph_received", 
+		parsed_story.text, parsed_story.character_id)
+
+
 
 func _load_story(ink_story_path):
 	var ink_story = File.new()
@@ -98,11 +100,13 @@ func _load_story(ink_story_path):
 	var content = ink_story.get_as_text()
 	ink_story.close()	
 	self.story = Story.new(content)
-	
+
+
 func _init_ink():
 	_add_runtime()
 	_load_story(path_to_compiled_ink)
 	emit_signal("story_is_loaded")
+
 
 func _add_runtime():
 	InkRuntime.init(get_tree().root)

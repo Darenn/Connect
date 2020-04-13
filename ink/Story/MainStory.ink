@@ -3,7 +3,12 @@ INCLUDE Run1/PrologueOpeningScene.ink
 INCLUDE Run1/Day1/AwakeningLana.ink
 INCLUDE Run1/Day1/FirstEncounter.ink
 
--> start
+
+Lana(happy): Hey you!
+
+
+
+
 === start ===
 // These are Knot Tags, the commands are done at start, before any other line
 # room: courtyard

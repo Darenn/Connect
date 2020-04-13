@@ -81,8 +81,6 @@ func _convert_markdown_to_bbcode() -> void:
 	_convert_simple_tags_to_openclose_tags("__", "[b]", "[/b]")
 	_convert_simple_tags_to_openclose_tags("_", "[i]", "[/i]")
 
-	print(text)
-
 # Convert all simple tags from text property to openclose tags 
 # Example : **bold** -> [b]bold[/b]
 func _convert_simple_tags_to_openclose_tags(from: String, to_open: String, to_close: String) -> void:

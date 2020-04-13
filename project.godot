@@ -12,32 +12,32 @@ _global_script_classes=[ {
 "base": "TextureRect",
 "class": "Actor",
 "language": "GDScript",
-"path": "res://gameplay/entities/actors/actor.gd"
+"path": "res://gui/dialog_gui/actor/actor.gd"
 }, {
 "base": "Resource",
 "class": "Character",
 "language": "GDScript",
 "path": "res://gameplay/entities/character.gd"
 }, {
+"base": "Resource",
+"class": "CharacterTextureSet",
+"language": "GDScript",
+"path": "res://gameplay/entities/character_texture_set.gd"
+}, {
 "base": "Control",
 "class": "DialogBox",
 "language": "GDScript",
-"path": "res://gui/dialog_box/dialog_box.gd"
+"path": "res://gui/dialog_gui/dialog_box/dialog_box.gd"
 }, {
 "base": "Control",
 "class": "DialogGUI",
 "language": "GDScript",
-"path": "res://gui/DialogGUI.gd"
-}, {
-"base": "Node",
-"class": "DialogRunner",
-"language": "GDScript",
-"path": "res://ink/dialog_runner.gd"
+"path": "res://gui/dialog_gui/dialog_GUI.gd"
 }, {
 "base": "RichTextEffect",
 "class": "FadeInRichTextEffect",
 "language": "GDScript",
-"path": "res://gui/rich_text_effects/fade_in_rich_text_effect.gd"
+"path": "res://gui/dialog_gui/rich_text_effects/fade_in_rich_text_effect.gd"
 }, {
 "base": "Node",
 "class": "InkRunner",
@@ -52,14 +52,14 @@ _global_script_classes=[ {
 "base": "RichTextEffect",
 "class": "TypingRichTextEffect",
 "language": "GDScript",
-"path": "res://gui/rich_text_effects/typing_rich_text_effect.gd"
+"path": "res://gui/dialog_gui/rich_text_effects/typing_rich_text_effect.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
 "Character": "",
+"CharacterTextureSet": "",
 "DialogBox": "",
 "DialogGUI": "",
-"DialogRunner": "",
 "FadeInRichTextEffect": "",
 "InkRunner": "",
 "LinkParser": "",
@@ -84,7 +84,7 @@ window/size/height=1080
 
 [editor_plugins]
 
-enabled=PoolStringArray( "inkgd" )
+enabled=PoolStringArray( "connect", "inkgd" )
 
 [input]
 

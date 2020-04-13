@@ -1,0 +1,166 @@
+[gd_resource type="Resource" load_steps=69 format=2]
+
+[ext_resource path="res://gameplay/entities/character.gd" type="Script" id=1]
+[ext_resource path="res://gameplay/entities/character_texture_set.gd" type="Script" id=2]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/terrified/amaryllis_terrified_base.png" type="Texture" id=58]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tensed/amaryllis_tensed_eye_closed.png" type="Texture" id=59]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tensed/amaryllis_tensed_eye_open.png" type="Texture" id=60]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tensed/amaryllis_tensed_mouth_closed.png" type="Texture" id=61]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tensed/amaryllis_tensed_mouth_open.png" type="Texture" id=62]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/thoughtful/amaryllis_thoughtful_eye_closed.png" type="Texture" id=63]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/thoughtful/amaryllis_thoughtful_mouth_closed.png" type="Texture" id=64]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/wink/amaryllis_wink_eye_closed.png" type="Texture" id=65]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/thoughtful/amaryllis_thoughtful_base.png" type="Texture" id=66]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/terrified/amaryllis_terrified_mouth_closed.png" type="Texture" id=67]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/wink/amaryllis_wink_mouth_closed.png" type="Texture" id=68]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/wink/amaryllis_wink_mouth_open.png" type="Texture" id=69]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/thoughtful/amaryllis_thoughtful_mouth_open.png" type="Texture" id=70]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/terrified/amaryllis_terrified_mouth_open.png" type="Texture" id=71]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/wink/amaryllis_wink_eye_open.png" type="Texture" id=72]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/wink/amaryllis_wink_base.png" type="Texture" id=73]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/thoughtful/amaryllis_thoughtful_eye_open.png" type="Texture" id=74]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/terrified/amaryllis_terrified_eye_open.png" type="Texture" id=75]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/terrified/amaryllis_terrified_eye_closed.png" type="Texture" id=76]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/scared/amaryllis_scared_mouth_open.png" type="Texture" id=77]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tearful/amaryllis_tearful_base.png" type="Texture" id=78]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tearful/amaryllis_tearful_eye_closed.png" type="Texture" id=79]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tearful/amaryllis_tearful_eye_open.png" type="Texture" id=80]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tearful/amaryllis_tearful_mouth_closed.png" type="Texture" id=81]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tearful/amaryllis_tearful_mouth_open.png" type="Texture" id=82]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/tensed/amaryllis_tensed_base.png" type="Texture" id=83]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/embarrassed/amaryllis_embarrassed_base.png" type="Texture" id=84]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/embarrassed/amaryllis_embarrassed_eye_closed.png" type="Texture" id=85]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/happy/amaryllis_happy_mouth_closed.png" type="Texture" id=86]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/neutral/amaryllis_neutral_eye_open.png" type="Texture" id=87]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/embarrassed/amaryllis_embarrassed_eye_open.png" type="Texture" id=88]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/embarrassed/amaryllis_embarrassed_mouth_closed.png" type="Texture" id=89]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/happy/amaryllis_happy_eye_closed.png" type="Texture" id=90]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/neutral/amaryllis_neutral_mouth_closed.png" type="Texture" id=91]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/scared/amaryllis_scared_base.png" type="Texture" id=92]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/scared/amaryllis_scared_eye_open.png" type="Texture" id=93]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/scared/amaryllis_scared_mouth_closed.png" type="Texture" id=94]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/crying/amaryllis_crying_mouth_closed.png" type="Texture" id=95]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/happy/amaryllis_happy_mouth_open.png" type="Texture" id=96]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/angry/amaryllis_angry_base.png" type="Texture" id=97]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/angry/amaryllis_angry_mouth_open.png" type="Texture" id=98]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/crying/amaryllis_crying_base.png" type="Texture" id=99]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/crying/amaryllis_crying_eye_open.png" type="Texture" id=100]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/happy/amaryllis_happy_eye_open.png" type="Texture" id=101]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/crying/amaryllis_crying_mouth_open.png" type="Texture" id=102]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/neutral/amaryllis_neutral_mouth_open.png" type="Texture" id=103]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/crying/amaryllis_crying_eye_closed.png" type="Texture" id=104]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/happy/amaryllis_happy_base.png" type="Texture" id=105]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/neutral/amaryllis_neutral_base.png" type="Texture" id=106]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/embarrassed/amaryllis_embarrassed_mouth_open.png" type="Texture" id=107]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/angry/amaryllis_angry_eye_closed.png" type="Texture" id=108]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/neutral/amaryllis_neutral_eye_closed.png" type="Texture" id=109]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/scared/amaryllis_scared_eye_closed.png" type="Texture" id=110]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/angry/amaryllis_angry_mouth_closed.png" type="Texture" id=111]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/sprites/angry/amaryllis_angry_eye_open.png" type="Texture" id=112]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+texture_base = ExtResource( 97 )
+texture_eye_closed = ExtResource( 108 )
+texture_eye_open = ExtResource( 112 )
+texture_mouth_closed = ExtResource( 111 )
+texture_mouth_open = ExtResource( 98 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+texture_base = ExtResource( 99 )
+texture_eye_closed = ExtResource( 104 )
+texture_eye_open = ExtResource( 100 )
+texture_mouth_closed = ExtResource( 95 )
+texture_mouth_open = ExtResource( 102 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+texture_base = ExtResource( 84 )
+texture_eye_closed = ExtResource( 85 )
+texture_eye_open = ExtResource( 88 )
+texture_mouth_closed = ExtResource( 89 )
+texture_mouth_open = ExtResource( 107 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+texture_base = ExtResource( 105 )
+texture_eye_closed = ExtResource( 90 )
+texture_eye_open = ExtResource( 101 )
+texture_mouth_closed = ExtResource( 86 )
+texture_mouth_open = ExtResource( 96 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+texture_base = ExtResource( 106 )
+texture_eye_closed = ExtResource( 109 )
+texture_eye_open = ExtResource( 87 )
+texture_mouth_closed = ExtResource( 91 )
+texture_mouth_open = ExtResource( 103 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+texture_base = ExtResource( 92 )
+texture_eye_closed = ExtResource( 110 )
+texture_eye_open = ExtResource( 93 )
+texture_mouth_closed = ExtResource( 94 )
+texture_mouth_open = ExtResource( 77 )
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 2 )
+texture_base = ExtResource( 78 )
+texture_eye_closed = ExtResource( 79 )
+texture_eye_open = ExtResource( 80 )
+texture_mouth_closed = ExtResource( 81 )
+texture_mouth_open = ExtResource( 82 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 2 )
+texture_base = ExtResource( 83 )
+texture_eye_closed = ExtResource( 59 )
+texture_eye_open = ExtResource( 60 )
+texture_mouth_closed = ExtResource( 61 )
+texture_mouth_open = ExtResource( 62 )
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 2 )
+texture_base = ExtResource( 58 )
+texture_eye_closed = ExtResource( 76 )
+texture_eye_open = ExtResource( 75 )
+texture_mouth_closed = ExtResource( 67 )
+texture_mouth_open = ExtResource( 71 )
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 2 )
+texture_base = ExtResource( 66 )
+texture_eye_closed = ExtResource( 63 )
+texture_eye_open = ExtResource( 74 )
+texture_mouth_closed = ExtResource( 64 )
+texture_mouth_open = ExtResource( 70 )
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 2 )
+texture_base = ExtResource( 73 )
+texture_eye_closed = ExtResource( 65 )
+texture_eye_open = ExtResource( 72 )
+texture_mouth_closed = ExtResource( 68 )
+texture_mouth_open = ExtResource( 69 )
+
+[resource]
+script = ExtResource( 1 )
+id = "amaryllis"
+displayed_name = "Mary"
+color = Color( 0.976471, 0.627451, 0.133333, 1 )
+_characters_texture_set_by_humor = {
+"angry": SubResource( 1 ),
+"crying": SubResource( 2 ),
+"embarrassed": SubResource( 3 ),
+"happy": SubResource( 4 ),
+"neutral": SubResource( 5 ),
+"scared": SubResource( 6 ),
+"tearful": SubResource( 7 ),
+"tensed": SubResource( 8 ),
+"terrified": SubResource( 9 ),
+"thoughtful": SubResource( 10 ),
+"wink": SubResource( 11 )
+}

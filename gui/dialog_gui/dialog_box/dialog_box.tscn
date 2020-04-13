@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.gd" type="Script" id=1]
+[ext_resource path="res://gui/dialog_gui/dialog_box/dialog_bubble.png" type="Texture" id=2]
+
+[node name="DialogBox" type="Control"]
+margin_right = 1024.0
+margin_bottom = 160.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+patch_margin_left = 21
+patch_margin_top = 20
+patch_margin_right = 21
+patch_margin_bottom = 25
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 15.0
+margin_right = -19.906
+margin_bottom = -23.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+text = "Bonjour Jean!"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="Background/RichTextLabel"]

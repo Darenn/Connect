@@ -1,0 +1,180 @@
+[gd_resource type="Resource" load_steps=75 format=2]
+
+[ext_resource path="res://gameplay/entities/character_texture_set.gd" type="Script" id=1]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/annoyed/charlie_annoyed_mouth_closed.png" type="Texture" id=2]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/annoyed/charlie_annoyed_base.png" type="Texture" id=3]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/angry/charlie_angry_eye_open.png" type="Texture" id=4]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/annoyed/charlie_annoyed_mouth_open.png" type="Texture" id=5]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/blush/charlie_blush_base.png" type="Texture" id=6]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/annoyed/charlie_annoyed_eye_open.png" type="Texture" id=7]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/blush/charlie_blush_eye_closed.png" type="Texture" id=8]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/amused/charlie_amused_mouth_closed.png" type="Texture" id=9]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/angry/charlie_angry_eye_closed.png" type="Texture" id=10]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/angry/charlie_angry_mouth_closed.png" type="Texture" id=11]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/amused/charlie_amused_eye_open.png" type="Texture" id=12]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/amused/charlie_amused_mouth_open.png" type="Texture" id=13]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/amused/charlie_amused_eye_closed.png" type="Texture" id=14]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/annoyed/charlie_annoyed_eye_closed.png" type="Texture" id=15]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/amused/charlie_amused_base.png" type="Texture" id=16]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/angry/charlie_angry_base.png" type="Texture" id=18]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/angry/charlie_angry_mouth_open.png" type="Texture" id=19]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/neutral/charlie_neutral_base.png" type="Texture" id=22]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sad/charlie_sad_eye_open.png" type="Texture" id=24]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/neutral/charlie_neutral_eye_open.png" type="Texture" id=25]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/furious/charlie_furious_eye_closed.png" type="Texture" id=26]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/blush/charlie_blush_eye_open.png" type="Texture" id=29]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/doubtful/charlie_doubtful_eye_open.png" type="Texture" id=30]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/break/charlie_break_mouth_closed.png" type="Texture" id=32]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/furious/charlie_furious_eye_open.png" type="Texture" id=37]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/break/charlie_break_base.png" type="Texture" id=38]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/doubtful/charlie_doubtful_base.png" type="Texture" id=41]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/happy/charlie_happy_mouth_closed.png" type="Texture" id=43]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/happy/charlie_happy_eye_closed.png" type="Texture" id=45]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/blush/charlie_blush_mouth_closed.png" type="Texture" id=46]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/doubtful/charlie_doubtful_eye_closed.png" type="Texture" id=47]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/break/charlie_break_eye_closed.png" type="Texture" id=48]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/doubtful/charlie_doubtful_mouth_open.png" type="Texture" id=49]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/blush/charlie_blush_mouth_open.png" type="Texture" id=50]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/furious/charlie_furious_mouth_closed.png" type="Texture" id=51]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/happy/charlie_happy_mouth_open.png" type="Texture" id=52]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/furious/charlie_furious_mouth_open.png" type="Texture" id=53]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/neutral/charlie_neutral_mouth_open.png" type="Texture" id=54]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sad/charlie_sad_base.png" type="Texture" id=55]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/break/charlie_break_eye_open.png" type="Texture" id=56]
+[ext_resource path="res://gameplay/entities/character.gd" type="Script" id=57]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/break/charlie_break_mouth_open.png" type="Texture" id=58]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/happy/charlie_happy_base.png" type="Texture" id=59]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/happy/charlie_happy_eye_open.png" type="Texture" id=60]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sad/charlie_sad_mouth_closed.png" type="Texture" id=61]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sad/charlie_sad_eye_closed.png" type="Texture" id=62]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/furious/charlie_furious_base.png" type="Texture" id=63]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/neutral/charlie_neutral_mouth_closed.png" type="Texture" id=64]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/doubtful/charlie_doubtful_mouth_closed.png" type="Texture" id=65]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/neutral/charlie_neutral_eye_closed.png" type="Texture" id=66]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sad/charlie_sad_mouth_open.png" type="Texture" id=67]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sceptical/charlie_sceptical_base.png" type="Texture" id=68]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/scared/charlie_scared_base.png" type="Texture" id=69]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/scared/charlie_scared_mouth_open.png" type="Texture" id=70]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sceptical/charlie_sceptical_eye_closed.png" type="Texture" id=71]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/scared/charlie_scared_eye_closed.png" type="Texture" id=72]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sceptical/charlie_sceptical_mouth_closed.png" type="Texture" id=73]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sceptical/charlie_sceptical_mouth_open.png" type="Texture" id=74]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/sceptical/charlie_sceptical_eye_open.png" type="Texture" id=75]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/scared/charlie_scared_eye_open.png" type="Texture" id=76]
+[ext_resource path="res://gameplay/entities/characters/charlie/sprites/scared/charlie_scared_mouth_closed.png" type="Texture" id=77]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 1 )
+texture_base = ExtResource( 16 )
+texture_eye_closed = ExtResource( 14 )
+texture_eye_open = ExtResource( 12 )
+texture_mouth_closed = ExtResource( 9 )
+texture_mouth_open = ExtResource( 13 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+texture_base = ExtResource( 18 )
+texture_eye_closed = ExtResource( 10 )
+texture_eye_open = ExtResource( 4 )
+texture_mouth_closed = ExtResource( 11 )
+texture_mouth_open = ExtResource( 19 )
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 1 )
+texture_base = ExtResource( 3 )
+texture_eye_closed = ExtResource( 15 )
+texture_eye_open = ExtResource( 7 )
+texture_mouth_closed = ExtResource( 2 )
+texture_mouth_open = ExtResource( 5 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 1 )
+texture_base = ExtResource( 6 )
+texture_eye_closed = ExtResource( 8 )
+texture_eye_open = ExtResource( 29 )
+texture_mouth_closed = ExtResource( 46 )
+texture_mouth_open = ExtResource( 50 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 1 )
+texture_base = ExtResource( 38 )
+texture_eye_closed = ExtResource( 48 )
+texture_eye_open = ExtResource( 56 )
+texture_mouth_closed = ExtResource( 32 )
+texture_mouth_open = ExtResource( 58 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 1 )
+texture_base = ExtResource( 41 )
+texture_eye_closed = ExtResource( 47 )
+texture_eye_open = ExtResource( 30 )
+texture_mouth_closed = ExtResource( 65 )
+texture_mouth_open = ExtResource( 49 )
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 1 )
+texture_base = ExtResource( 63 )
+texture_eye_closed = ExtResource( 26 )
+texture_eye_open = ExtResource( 37 )
+texture_mouth_closed = ExtResource( 51 )
+texture_mouth_open = ExtResource( 53 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 1 )
+texture_base = ExtResource( 59 )
+texture_eye_closed = ExtResource( 45 )
+texture_eye_open = ExtResource( 60 )
+texture_mouth_closed = ExtResource( 43 )
+texture_mouth_open = ExtResource( 52 )
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 1 )
+texture_base = ExtResource( 22 )
+texture_eye_closed = ExtResource( 66 )
+texture_eye_open = ExtResource( 25 )
+texture_mouth_closed = ExtResource( 64 )
+texture_mouth_open = ExtResource( 54 )
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 1 )
+texture_base = ExtResource( 55 )
+texture_eye_closed = ExtResource( 62 )
+texture_eye_open = ExtResource( 24 )
+texture_mouth_closed = ExtResource( 61 )
+texture_mouth_open = ExtResource( 67 )
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 1 )
+texture_base = ExtResource( 69 )
+texture_eye_closed = ExtResource( 72 )
+texture_eye_open = ExtResource( 76 )
+texture_mouth_closed = ExtResource( 77 )
+texture_mouth_open = ExtResource( 70 )
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 1 )
+texture_base = ExtResource( 68 )
+texture_eye_closed = ExtResource( 71 )
+texture_eye_open = ExtResource( 75 )
+texture_mouth_closed = ExtResource( 73 )
+texture_mouth_open = ExtResource( 74 )
+
+[resource]
+script = ExtResource( 57 )
+id = "charlie"
+displayed_name = "Charlie"
+color = Color( 0.12549, 0.266667, 0.909804, 1 )
+_characters_texture_set_by_humor = {
+"amused": SubResource( 1 ),
+"angry": SubResource( 2 ),
+"annoyed": SubResource( 3 ),
+"blush": SubResource( 4 ),
+"break": SubResource( 5 ),
+"doubtful": SubResource( 6 ),
+"furious": SubResource( 7 ),
+"happy": SubResource( 8 ),
+"neutral": SubResource( 9 ),
+"sad": SubResource( 10 ),
+"scared": SubResource( 11 ),
+"sceptical": SubResource( 12 )
+}
