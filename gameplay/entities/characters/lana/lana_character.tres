@@ -2,123 +2,123 @@
 
 [ext_resource path="res://gameplay/entities/character.gd" type="Script" id=1]
 [ext_resource path="res://gameplay/entities/character_texture_set.gd" type="Script" id=2]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/amused/lana_amused_mouth_open.png" type="Texture" id=3]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/amused/lana_amused_eye_closed.png" type="Texture" id=4]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/angry/lana_angry_base.png" type="Texture" id=5]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/angry/lana_angry_eye_closed.png" type="Texture" id=6]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/annoyed/lana_annoyed_base.png" type="Texture" id=7]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/angry/lana_angry_mouth_open.png" type="Texture" id=8]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/amused/lana_amused_mouth_closed.png" type="Texture" id=9]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/amused/lana_amused_eye_open.png" type="Texture" id=10]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/angry/lana_angry_mouth_closed.png" type="Texture" id=11]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/angry/lana_angry_eye_open.png" type="Texture" id=12]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/annoyed/lana_annoyed_eye_closed.png" type="Texture" id=13]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/annoyed/lana_annoyed_eye_open.png" type="Texture" id=14]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/happy/lana_happy_mouth_closed.png" type="Texture" id=15]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/neutral/lana_neutral_mouth_open.png" type="Texture" id=16]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/sad/lana_sad_mouth_open.png" type="Texture" id=17]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/thoughtful/lana_thoughtful_eye_closed.png" type="Texture" id=18]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/sad/lana_sad_eye_closed.png" type="Texture" id=19]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/happy/lana_happy_base.png" type="Texture" id=20]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/terrified/lana_terrified_eye_open.png" type="Texture" id=21]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/thoughtful/lana_thoughtful_eye_open.png" type="Texture" id=22]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/sad/lana_sad_mouth_closed.png" type="Texture" id=23]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/thoughtful/lana_thoughtful_mouth_open.png" type="Texture" id=24]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/happy/lana_happy_mouth_open.png" type="Texture" id=25]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/happy/lana_happy_eye_closed.png" type="Texture" id=26]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/neutral/lana_neutral_eye_open.png" type="Texture" id=27]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/terrified/lana_terrified_mouth_closed.png" type="Texture" id=28]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/terrified/lana_terrified_mouth_open.png" type="Texture" id=29]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/neutral/lana_neutral_base.png" type="Texture" id=30]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/neutral/lana_neutral_mouth_closed.png" type="Texture" id=31]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/terrified/lana_terrified_eye_closed.png" type="Texture" id=32]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/happy/lana_happy_eye_open.png" type="Texture" id=33]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/thoughtful/lana_thoughtful_base.png" type="Texture" id=34]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/worried/lana_worried_eye_closed.png" type="Texture" id=35]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/terrified/lana_terrified_base.png" type="Texture" id=36]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/worried/lana_worried_base.png" type="Texture" id=37]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/annoyed/lana_annoyed_mouth_closed.png" type="Texture" id=38]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/neutral/lana_neutral_eye_closed.png" type="Texture" id=39]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/thoughtful/lana_thoughtful_mouth_closed.png" type="Texture" id=40]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/worried/lana_worried_eye_open.png" type="Texture" id=41]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/sad/lana_sad_base.png" type="Texture" id=42]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/worried/lana_worried_mouth_closed.png" type="Texture" id=43]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/sad/lana_sad_eye_open.png" type="Texture" id=44]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/worried/lana_worried_mouth_open.png" type="Texture" id=45]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/annoyed/lana_annoyed_mouth_open.png" type="Texture" id=46]
-[ext_resource path="res://gameplay/entities/characters/lana/sprites/amused/lana_amused_base.png" type="Texture" id=47]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/happy/lana_happy_eye_closed.png" type="Texture" id=3]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/amused/lana_amused_eye_closed.png" type="Texture" id=4]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/angry/lana_angry_mouth_closed.png" type="Texture" id=5]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/annoyed/lana_annoyed_base.png" type="Texture" id=6]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/amused/lana_amused_eye_open.png" type="Texture" id=7]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/amused/lana_amused_mouth_open.png" type="Texture" id=8]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/amused/lana_amused_base.png" type="Texture" id=9]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/angry/lana_angry_eye_closed.png" type="Texture" id=10]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/angry/lana_angry_mouth_open.png" type="Texture" id=11]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/annoyed/lana_annoyed_mouth_closed.png" type="Texture" id=12]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/angry/lana_angry_eye_open.png" type="Texture" id=13]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/annoyed/lana_annoyed_mouth_open.png" type="Texture" id=14]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/angry/lana_angry_base.png" type="Texture" id=15]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/annoyed/lana_annoyed_eye_closed.png" type="Texture" id=16]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/happy/lana_happy_base.png" type="Texture" id=17]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/amused/lana_amused_mouth_closed.png" type="Texture" id=18]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/annoyed/lana_annoyed_eye_open.png" type="Texture" id=19]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/neutral/lana_neutral_eye_open.png" type="Texture" id=20]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/thoughtful/lana_thoughtful_eye_open.png" type="Texture" id=21]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/worried/lana_worried_mouth_closed.png" type="Texture" id=22]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/thoughtful/lana_thoughtful_eye_closed.png" type="Texture" id=23]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/worried/lana_worried_mouth_open.png" type="Texture" id=24]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/happy/lana_happy_mouth_open.png" type="Texture" id=25]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/thoughtful/lana_thoughtful_mouth_closed.png" type="Texture" id=26]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/terrified/lana_terrified_eye_closed.png" type="Texture" id=27]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/sad/lana_sad_mouth_closed.png" type="Texture" id=28]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/terrified/lana_terrified_mouth_open.png" type="Texture" id=29]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/terrified/lana_terrified_mouth_closed.png" type="Texture" id=30]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/thoughtful/lana_thoughtful_base.png" type="Texture" id=31]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/neutral/lana_neutral_base.png" type="Texture" id=32]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/neutral/lana_neutral_mouth_closed.png" type="Texture" id=33]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/sad/lana_sad_eye_closed.png" type="Texture" id=34]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/neutral/lana_neutral_mouth_open.png" type="Texture" id=35]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/happy/lana_happy_mouth_closed.png" type="Texture" id=36]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/sad/lana_sad_eye_open.png" type="Texture" id=37]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/neutral/lana_neutral_eye_closed.png" type="Texture" id=38]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/happy/lana_happy_eye_open.png" type="Texture" id=39]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/worried/lana_worried_base.png" type="Texture" id=40]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/thoughtful/lana_thoughtful_mouth_open.png" type="Texture" id=41]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/worried/lana_worried_eye_closed.png" type="Texture" id=42]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/worried/lana_worried_eye_open.png" type="Texture" id=43]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/sad/lana_sad_base.png" type="Texture" id=44]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/terrified/lana_terrified_base.png" type="Texture" id=45]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/sad/lana_sad_mouth_open.png" type="Texture" id=46]
+[ext_resource path="res://gameplay/entities/characters/lana/textures/terrified/lana_terrified_eye_open.png" type="Texture" id=47]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
-texture_base = ExtResource( 47 )
+texture_base = ExtResource( 9 )
 texture_eye_closed = ExtResource( 4 )
-texture_eye_open = ExtResource( 10 )
-texture_mouth_closed = ExtResource( 9 )
-texture_mouth_open = ExtResource( 3 )
+texture_eye_open = ExtResource( 7 )
+texture_mouth_closed = ExtResource( 18 )
+texture_mouth_open = ExtResource( 8 )
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
-texture_base = ExtResource( 5 )
-texture_eye_closed = ExtResource( 6 )
-texture_eye_open = ExtResource( 12 )
-texture_mouth_closed = ExtResource( 11 )
-texture_mouth_open = ExtResource( 8 )
+texture_base = ExtResource( 15 )
+texture_eye_closed = ExtResource( 10 )
+texture_eye_open = ExtResource( 13 )
+texture_mouth_closed = ExtResource( 5 )
+texture_mouth_open = ExtResource( 11 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 2 )
-texture_base = ExtResource( 7 )
-texture_eye_closed = ExtResource( 13 )
-texture_eye_open = ExtResource( 14 )
-texture_mouth_closed = ExtResource( 38 )
-texture_mouth_open = ExtResource( 46 )
+texture_base = ExtResource( 6 )
+texture_eye_closed = ExtResource( 16 )
+texture_eye_open = ExtResource( 19 )
+texture_mouth_closed = ExtResource( 12 )
+texture_mouth_open = ExtResource( 14 )
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
-texture_base = ExtResource( 20 )
-texture_eye_closed = ExtResource( 26 )
-texture_eye_open = ExtResource( 33 )
-texture_mouth_closed = ExtResource( 15 )
+texture_base = ExtResource( 17 )
+texture_eye_closed = ExtResource( 3 )
+texture_eye_open = ExtResource( 39 )
+texture_mouth_closed = ExtResource( 36 )
 texture_mouth_open = ExtResource( 25 )
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 2 )
-texture_base = ExtResource( 30 )
-texture_eye_closed = ExtResource( 39 )
-texture_eye_open = ExtResource( 27 )
-texture_mouth_closed = ExtResource( 31 )
-texture_mouth_open = ExtResource( 16 )
+texture_base = ExtResource( 32 )
+texture_eye_closed = ExtResource( 38 )
+texture_eye_open = ExtResource( 20 )
+texture_mouth_closed = ExtResource( 33 )
+texture_mouth_open = ExtResource( 35 )
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
-texture_base = ExtResource( 42 )
-texture_eye_closed = ExtResource( 19 )
-texture_eye_open = ExtResource( 44 )
-texture_mouth_closed = ExtResource( 23 )
-texture_mouth_open = ExtResource( 17 )
+texture_base = ExtResource( 44 )
+texture_eye_closed = ExtResource( 34 )
+texture_eye_open = ExtResource( 37 )
+texture_mouth_closed = ExtResource( 28 )
+texture_mouth_open = ExtResource( 46 )
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 2 )
-texture_base = ExtResource( 36 )
-texture_eye_closed = ExtResource( 32 )
-texture_eye_open = ExtResource( 21 )
-texture_mouth_closed = ExtResource( 28 )
+texture_base = ExtResource( 45 )
+texture_eye_closed = ExtResource( 27 )
+texture_eye_open = ExtResource( 47 )
+texture_mouth_closed = ExtResource( 30 )
 texture_mouth_open = ExtResource( 29 )
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 2 )
-texture_base = ExtResource( 34 )
-texture_eye_closed = ExtResource( 18 )
-texture_eye_open = ExtResource( 22 )
-texture_mouth_closed = ExtResource( 40 )
-texture_mouth_open = ExtResource( 24 )
+texture_base = ExtResource( 31 )
+texture_eye_closed = ExtResource( 23 )
+texture_eye_open = ExtResource( 21 )
+texture_mouth_closed = ExtResource( 26 )
+texture_mouth_open = ExtResource( 41 )
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 2 )
-texture_base = ExtResource( 37 )
-texture_eye_closed = ExtResource( 35 )
-texture_eye_open = ExtResource( 41 )
-texture_mouth_closed = ExtResource( 43 )
-texture_mouth_open = ExtResource( 45 )
+texture_base = ExtResource( 40 )
+texture_eye_closed = ExtResource( 42 )
+texture_eye_open = ExtResource( 43 )
+texture_mouth_closed = ExtResource( 22 )
+texture_mouth_open = ExtResource( 24 )
 
 [resource]
 resource_local_to_scene = true

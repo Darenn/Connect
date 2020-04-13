@@ -1,6 +1,9 @@
 extends Control
-
 class_name DialogBox
+
+"""
+Displays messages in a dialog box.
+"""
 
 enum DisplayMode {
 	INSTANT, # Text is displayed instant

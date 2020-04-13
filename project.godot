@@ -75,7 +75,7 @@ config/icon="res://icons/icon.png"
 [autoload]
 
 CommandRunner="*res://autoload/command_runner.gd"
-CharactersDB="*res://autoload/character_database.tscn"
+CharactersDB="*res://autoload/characters_database.tscn"
 
 [display]
 

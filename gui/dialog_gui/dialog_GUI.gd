@@ -1,9 +1,12 @@
 extends Control
-
 class_name DialogGUI
 
-var _actor_scene := preload("res://gui/dialog_gui/actor/actor.tscn")
+"""
+Display all GUI relative to dialogs.
 
+Listen to 'ink_runner' to start the dialog, display new messages, 
+end the dialog.
+"""
 
 onready var _dialog_box: DialogBox = $DialogBox
 onready var _actors_container: Control = $Actors
@@ -15,7 +18,7 @@ func _ready() -> void:
 func _on_changed_layout(layout_id: String, characters_id: PoolStringArray):
 	_reset()
 	for id in characters_id:
-		_actor_scene.instance()
+		Actor.instance()
 	
 func _reset():
 	pass

@@ -1,9 +1,13 @@
 extends TextureRect
 
-# Is used to represent a character during a dialog
+"""
+Is used to draw a character during a dialog.
+
+"""
 
 class_name Actor
 
+# The character representer by the actor
 var character: Character
 
 func init(character_id: String):

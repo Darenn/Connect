@@ -1,21 +1,23 @@
-# CommandRunner class registers and runs commands.
-#
-# A command is a string with the command id first, then arguments separated by spaces.
-# Format : command_id arg1 arg2 ...
-# Example : echo bonjour!gg
-#
-# It can be useful for debug console, or basic scripting
-# (I'm using it to parse and run custom commands in the Ink scripting language).
-#
-# How to use :
-# Add this script as an autoload in 'Project/ProjectSettings/Autoload'
-# Register new commands like :
-#	CommandParser.register_command("command ID", object, "method", 1, 1, "docs", "one-line docs")
-# And parse them :
-#	CommandParser.run_command(command_got_from_ink_file)
-
-
 extends Node
+
+"""
+CommandRunner class registers and runs commands.
+
+A command is a string with the command id first, then arguments separated by spaces.
+Format : command_id arg1 arg2 ...
+Example : echo bonjour!gg
+
+It can be useful for debug console, or basic scripting
+(I'm using it to parse and run custom commands in the Ink scripting language).
+
+How to use :
+Add this script as an autoload in 'Project/ProjectSettings/Autoload'
+Register new commands like :
+CommandParser.register_command('command ID', object, 'method', 1, 1, 
+		'docs', 'one-line docs')
+And parse them :
+CommandParser.run_command(command_got_from_ink_file)
+"""
 
 # Simple structure containing all data about a command.
 class Command:
