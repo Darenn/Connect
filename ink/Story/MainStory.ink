@@ -4,9 +4,9 @@ INCLUDE Run1/Day1/AwakeningLana.ink
 INCLUDE Run1/Day1/FirstEncounter.ink
 
 >>> change_layout default lana charlie
-Lana(happy): Hey you!
-Lana(sad): My name is Lana.
-Charlie(neutral): Mine is charlie
+Lana(happy): Hi! I'm Lana!
+Lana(sad): This text is longer because I need to try the different dialog box  size...
+Charlie(neutral): My name is Charlie, and I can jump on  different line like I want ssssssssssssssssssssssss.
 >>> change_layout default kendall none noah
 Kendall(annoyed): I will die very soon...
 Noah: Yes, me too.
