@@ -1,19 +1,23 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.gd" type="Script" id=1]
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_bubble.png" type="Texture" id=2]
 [ext_resource path="res://fonts/CaviarDreams/CaviarDreams.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://fonts/CaviarDreams/CaviarDreams_BoldItalic.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 3 )
 
 [node name="DialogBox" type="Control"]
-margin_right = 672.0
-margin_bottom = 770.0
+margin_right = 565.0
+margin_bottom = 708.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 1 )
@@ -43,7 +47,8 @@ margin_bottom = -23.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/mono_font = SubResource( 1 )
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/bold_italics_font = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 text = "Bonjour Jean! ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
