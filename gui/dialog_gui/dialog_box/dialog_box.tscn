@@ -37,6 +37,8 @@ __meta__ = {
 [node name="RichTextLabel" type="RichTextLabel" parent="Background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.27209
+margin_right = -2.27209
 margin_bottom = -14.0
 size_flags_horizontal = 7
 size_flags_vertical = 7
@@ -44,8 +46,8 @@ custom_fonts/bold_italics_font = SubResource( 1 )
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "[center]Jean you're kind of duchbag aren't you mother fucker bitch? I don't like to be typing random things to see if centered alignment is working you know."
-text = "Jean you're kind of duchbag aren't you mother fucker bitch? I don't like to be typing random things to see if centered alignment is working you know."
+bbcode_text = "[center]Thank youu Vincent you're the best!"
+text = "Thank youu Vincent you're the best!"
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
