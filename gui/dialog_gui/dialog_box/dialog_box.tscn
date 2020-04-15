@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.gd" type="Script" id=1]
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_bubble.png" type="Texture" id=2]
@@ -6,13 +6,9 @@
 [ext_resource path="res://fonts/CaviarDreams/CaviarDreams_BoldItalic.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 3 )
-
-[sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=3]
-size = 32
+[sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 3 )
 
 [node name="DialogBox" type="Control"]
@@ -40,18 +36,15 @@ __meta__ = {
 [node name="RichTextLabel" type="RichTextLabel" parent="Background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 20.0
-margin_top = 15.0
-margin_right = -19.906
-margin_bottom = -23.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/mono_font = SubResource( 1 )
-custom_fonts/bold_italics_font = SubResource( 4 )
-custom_fonts/normal_font = SubResource( 3 )
+margin_bottom = -14.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-text = "Bonjour Jean! ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+bbcode_text = "[center]Jean you're kind of duchbag aren't you mother fucker bitch? I don't like to be typing random things to see if centered alignment is working you know."
+text = "Jean you're kind of duchbag aren't you mother fucker bitch? I don't like to be typing random things to see if centered alignment is working you know."
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
