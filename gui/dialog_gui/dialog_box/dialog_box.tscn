@@ -9,6 +9,7 @@
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 32
 font_data = ExtResource( 3 )
 
 [node name="DialogBox" type="Control"]

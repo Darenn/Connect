@@ -27,7 +27,7 @@ anchor_bottom = 1.0
 margin_left = 491.0
 margin_top = -367.0
 margin_right = -791.0
-margin_bottom = -199.0
+margin_bottom = -26.0
 
 [node name="LayoutDefault" type="Control" parent="."]
 visible = false
