@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://gui/dialog_gui/actor/actor.gd" type="Script" id=1]
 [ext_resource path="res://gameplay/entities/characters/amaryllis/textures/angry/amaryllis_angry_base.png" type="Texture" id=2]
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.tscn" type="PackedScene" id=3]
+[ext_resource path="res://shaders/material_colored_shadow.tres" type="Material" id=4]
 
 [node name="Actor" type="Control"]
 anchor_right = 1.0
@@ -15,11 +16,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Base" type="TextureRect" parent="."]
+[node name="Texture" type="TextureRect" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 2 )
 stretch_mode = 4
+
+[node name="ShadowTexture" type="TextureRect" parent="Texture"]
+show_behind_parent = true
+material = ExtResource( 4 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
 
 [node name="DialogBoxPositions" type="Control" parent="."]
 anchor_right = 1.0

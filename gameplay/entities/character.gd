@@ -11,8 +11,9 @@ Contains all data relative to a character.
 export(String) var id = ""
 # The name displayed in the GUI
 export(String) var displayed_name = "no_name"
-# The color used to write the character name and other gui effects.
+# The color used to write the character name and other gui effects like shadow.
 export(Color) var color
+export(Vector2) var shadow_direction
 
 # A Dictionary<humor_id: String, textures_set: CharacterTextureSet 
 # containing all textures for the character, by humor.
