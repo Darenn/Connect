@@ -18,6 +18,7 @@ enum DialogBoxPosition {
 
 # The character representer by the actor
 var character: Character
+var is_shadow_visible: bool setget set_shadow_visible, get_shadow_visible
 	
 onready var _base_texture_rect: TextureRect = $Texture
 onready var _dialog_box_positions: Control = $DialogBoxPositions
@@ -33,3 +34,9 @@ func init_actor(character_id: String, humor_id: String) -> void:
 
 func get_dialog_box_position(position) -> Control:
 	return _dialog_box_positions.get_child(position) as Control
+	
+func set_shadow_visible(is_visible: bool) -> void:
+	_shadow_texture.visible = is_visible
+	
+func get_shadow_visible() -> bool:
+	return _shadow_texture.visible

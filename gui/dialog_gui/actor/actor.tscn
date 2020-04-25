@@ -23,6 +23,7 @@ texture = ExtResource( 2 )
 stretch_mode = 4
 
 [node name="ShadowTexture" type="TextureRect" parent="Texture"]
+visible = false
 show_behind_parent = true
 material = ExtResource( 4 )
 anchor_right = 1.0

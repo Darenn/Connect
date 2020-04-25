@@ -17,6 +17,7 @@ onready var _dialog_box: DialogBox = $DialogBox
 
 # Dict<actor_id: String, Actor>
 var _actors_in_dialog = {}
+var _last_talking_actor: Actor;
 
 func _ready() -> void:
 	CommandRunner.register_command("change_layout", self, "change_layout", 1,
@@ -55,6 +56,10 @@ func _on_InkRunner_on_dialog_paragraph_received(paragraph: String,
 		push_error("Actor %s is not in the dialog." % actor_id)
 		return
 	var actor : Actor = _actors_in_dialog[actor_id]
+	if _last_talking_actor != null:
+		_last_talking_actor.is_shadow_visible = false
+	_last_talking_actor = actor
+	actor.is_shadow_visible = true;
 	var pos := actor.get_dialog_box_position(Actor.DialogBoxPosition.Right)
 	_dialog_box.visible = true
 	_dialog_box.rect_global_position = pos.rect_global_position
