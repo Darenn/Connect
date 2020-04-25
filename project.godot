@@ -54,6 +54,21 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://ink/link_parser.gd"
 }, {
+"base": "Node",
+"class": "Map",
+"language": "GDScript",
+"path": "res://gameplay/navigation/map/map.gd"
+}, {
+"base": "Node",
+"class": "Navigator",
+"language": "GDScript",
+"path": "res://gameplay/navigation/navigator/navigator.gd"
+}, {
+"base": "Node2D",
+"class": "Room",
+"language": "GDScript",
+"path": "res://gameplay/rooms/room.gd"
+}, {
 "base": "RichTextEffect",
 "class": "TypingRichTextEffect",
 "language": "GDScript",
@@ -69,6 +84,9 @@ _global_script_class_icons={
 "FadeInRichTextEffect": "",
 "InkRunner": "",
 "LinkParser": "",
+"Map": "",
+"Navigator": "",
+"Room": "",
 "TypingRichTextEffect": ""
 }
 

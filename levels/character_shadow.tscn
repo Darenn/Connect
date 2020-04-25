@@ -1,9 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://gameplay/entities/characters/amaryllis/textures/angry/amaryllis_angry_base.png" type="Texture" id=1]
-[ext_resource path="res://Modern-Dormroom1.png" type="Texture" id=2]
+[ext_resource path="res://gameplay/rooms/Modern-Dormroom1.png" type="Texture" id=2]
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.tscn" type="PackedScene" id=3]
 [ext_resource path="res://shaders/material_colored_shadow.tres" type="Material" id=4]
+
 
 [node name="TextureRect2" type="TextureRect"]
 show_behind_parent = true

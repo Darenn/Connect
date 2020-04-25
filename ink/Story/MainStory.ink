@@ -3,17 +3,13 @@ INCLUDE Run1/PrologueOpeningScene.ink
 INCLUDE Run1/Day1/AwakeningLana.ink
 INCLUDE Run1/Day1/FirstEncounter.ink
 
-CONST NONE = 0
-CONST STRAIGHT = 1
-CONST CHESS = 2
-CONST CROSSWORD = 3
-VAR hooperClueType = NONE
-
+>>> change_room bedroom_dark
 >>> change_layout default lana charlie
 Lana(happy): Hi! I'm Lana!
 Lana(sad): This text is longer because I need to try the different dialog box  size...
 Charlie(neutral): My name is Charlie, and I can jump on  different line like I want sss qsdqsd lkjdq sdkjq sdq dlqskjdqlksdj qsd qlksdjql skdjqlsdjqlksd .
 >>> change_layout default kendall none noah
+>>> change_room bedroom_lit
 Kendall(annoyed): I will die very soon...
 Noah: Yes, me too.
 

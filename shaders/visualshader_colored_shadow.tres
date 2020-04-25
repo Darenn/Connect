@@ -9,7 +9,7 @@ source = 2
 [sub_resource type="VisualShaderNodeInput" id=3]
 input_name = "uv"
 
-[sub_resource type="VisualShaderNodeColorUniform" id=7]
+[sub_resource type="VisualShaderNodeColorUniform" id=4]
 uniform_name = "shadow_color"
 
 [sub_resource type="VisualShaderNodeInput" id=5]
@@ -18,7 +18,7 @@ input_name = "vertex"
 [sub_resource type="VisualShaderNodeVectorOp" id=6]
 default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 10, -10, -20 ) ]
 
-[sub_resource type="VisualShaderNodeVec3Uniform" id=8]
+[sub_resource type="VisualShaderNodeVec3Uniform" id=7]
 uniform_name = "shadow_direction"
 
 [resource]
@@ -81,7 +81,7 @@ nodes/vertex/2/node = SubResource( 5 )
 nodes/vertex/2/position = Vector2( 260, -60 )
 nodes/vertex/3/node = SubResource( 6 )
 nodes/vertex/3/position = Vector2( 460, -60 )
-nodes/vertex/4/node = SubResource( 8 )
+nodes/vertex/4/node = SubResource( 7 )
 nodes/vertex/4/position = Vector2( 240, 40 )
 nodes/vertex/connections = PoolIntArray( 2, 0, 3, 0, 3, 0, 0, 0, 4, 0, 3, 1 )
 nodes/fragment/0/position = Vector2( 760, -80 )
@@ -91,6 +91,6 @@ nodes/fragment/3/node = SubResource( 2 )
 nodes/fragment/3/position = Vector2( 460, -120 )
 nodes/fragment/4/node = SubResource( 3 )
 nodes/fragment/4/position = Vector2( 240, 20 )
-nodes/fragment/6/node = SubResource( 7 )
+nodes/fragment/6/node = SubResource( 4 )
 nodes/fragment/6/position = Vector2( 500, 80 )
 nodes/fragment/connections = PoolIntArray( 2, 0, 3, 2, 4, 0, 3, 0, 3, 1, 0, 1, 6, 0, 0, 0 )

@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://gameplay/navigation/navigator/navigator.gd" type="Script" id=1]
+[ext_resource path="res://gameplay/rooms/bedroom_dark/bedroom_dark.tscn" type="PackedScene" id=2]
+[ext_resource path="res://gameplay/navigation/map/map.tscn" type="PackedScene" id=3]
+[ext_resource path="res://gameplay/rooms/bedroom_lit/bedroom_lit.tscn" type="PackedScene" id=4]
+
+[node name="Navigator" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Map" parent="." instance=ExtResource( 3 )]
+rooms = [ ExtResource( 2 ), ExtResource( 4 ) ]

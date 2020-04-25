@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Modern-Dormroom3.png-39773bc86318307e94583a6651bff379.stex"
+path="res://.import/Modern-Dormroom1.png-2d5d320d71d631d079a3bd929127e9f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Modern-Dormroom3.png"
-dest_files=[ "res://.import/Modern-Dormroom3.png-39773bc86318307e94583a6651bff379.stex" ]
+source_file="res://gameplay/rooms/Modern-Dormroom1.png"
+dest_files=[ "res://.import/Modern-Dormroom1.png-2d5d320d71d631d079a3bd929127e9f3.stex" ]
 
 [params]
 
