@@ -29,7 +29,14 @@ margin_top = -367.0
 margin_right = -791.0
 margin_bottom = -26.0
 
-[node name="LayoutDefault" type="Control" parent="."]
+[node name="Layouts" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="group" type="Control" parent="Layouts"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -38,47 +45,66 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Position0" parent="LayoutDefault" instance=ExtResource( 2 )]
+[node name="Position0" parent="Layouts/group" instance=ExtResource( 2 )]
 margin_left = 55.6357
 margin_top = 163.816
 margin_right = -1264.36
 margin_bottom = 904.816
 rect_scale = Vector2( 0.5, 0.5 )
 
-[node name="Position1" parent="LayoutDefault" instance=ExtResource( 2 )]
+[node name="Position1" parent="Layouts/group" instance=ExtResource( 2 )]
 margin_left = 373.995
 margin_top = 160.725
 margin_right = -946.005
 margin_bottom = 901.725
 rect_scale = Vector2( 0.5, 0.5 )
 
-[node name="Position2" parent="LayoutDefault" instance=ExtResource( 2 )]
+[node name="Position2" parent="Layouts/group" instance=ExtResource( 2 )]
 margin_left = 670.719
 margin_top = 163.816
 margin_right = -649.281
 margin_bottom = 904.816
 rect_scale = Vector2( 0.5, 0.5 )
 
-[node name="Position3" parent="LayoutDefault" instance=ExtResource( 2 )]
+[node name="Position3" parent="Layouts/group" instance=ExtResource( 2 )]
 margin_left = 976.715
 margin_top = 166.907
 margin_right = -343.285
 margin_bottom = 907.907
 rect_scale = Vector2( 0.5, 0.5 )
 
-[node name="Position4" parent="LayoutDefault" instance=ExtResource( 2 )]
+[node name="Position4" parent="Layouts/group" instance=ExtResource( 2 )]
 margin_left = 1267.26
 margin_top = 160.725
 margin_right = -52.7437
 margin_bottom = 901.725
 rect_scale = Vector2( 0.5, 0.5 )
 
-[node name="Position5" parent="LayoutDefault" instance=ExtResource( 2 )]
+[node name="Position5" parent="Layouts/group" instance=ExtResource( 2 )]
 margin_left = 1563.98
 margin_top = 163.816
 margin_right = 243.98
 margin_bottom = 904.816
 rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="intimate" type="Control" parent="Layouts"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position0" parent="Layouts/intimate" instance=ExtResource( 2 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -313.0
+margin_top = -503.5
+margin_right = 313.0
+margin_bottom = 1467.5
 
 [node name="Player" type="Control" parent="."]
 margin_right = 40.0

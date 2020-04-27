@@ -4,8 +4,9 @@ INCLUDE Run1/Day1/AwakeningLana.ink
 INCLUDE Run1/Day1/FirstEncounter.ink
 
 >>> change_room bedroom_dark
->>> change_layout default lana charlie
+>>> change_layout intimate lana
 Lana(happy): Hi! I'm Lana!
+>>> change_layout group lana charlie
 Lana(sad): This text is longer because I need to try the different dialog box  size...
 Charlie(neutral): My name is Charlie, and I can jump on  different line like I want sss qsdqsd lkjdq sdkjq sdq dlqskjdqlksdj qsd qlksdjql skdjqlsdjqlksd .
 >>> change_layout default kendall none noah

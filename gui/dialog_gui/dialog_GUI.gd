@@ -12,6 +12,7 @@ const ActorScene := preload("res://gui/dialog_gui/actor/actor.tscn")
 #const DialogBoxScene := preload("res://gui/dialog_gui/dialog_box/dialog_box.tscn")
 
 onready var _actors_container: Control = $Actors
+onready var _layouts: Control = $Layouts
 onready var _layout: DialogGUILayout = $LayoutDefault
 onready var _dialog_box: DialogBox = $DialogBox
 
@@ -30,6 +31,7 @@ func change_layout(layout_id: String, actor_id_pos_0 := "none",
 	var characters_id:= [actor_id_pos_0, actor_id_pos_1,
 			 actor_id_pos_2, actor_id_pos_3, actor_id_pos_4, actor_id_pos_5] 
 	_reset()
+	_layout = _get_layout(layout_id)
 	for i in range(characters_id.size()):
 		var id := characters_id[i] as String
 		if id == "none":
@@ -41,8 +43,16 @@ func change_layout(layout_id: String, actor_id_pos_0 := "none",
 		actor.rect_position = layout_position.rect_position
 		actor.rect_scale = layout_position.rect_scale
 		_actors_in_dialog[id] = actor
-		
-	
+
+
+func _get_layout(name: String) -> DialogGUILayout:
+	for layout in _layouts.get_children():
+		if layout.name == name:
+			return layout
+	push_error("No layout named '%s'" % name)
+	return _layouts.get_child(0) as DialogGUILayout
+
+
 func _reset():
 	_dialog_box.clear()
 	_dialog_box.visible = false
