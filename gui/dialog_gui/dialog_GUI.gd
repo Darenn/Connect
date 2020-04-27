@@ -49,7 +49,7 @@ func _get_layout(name: String) -> DialogGUILayout:
 	for layout in _layouts.get_children():
 		if layout.name == name:
 			return layout
-	push_error("No layout named '%s'" % name)
+	push_error("No layout named '%s'." % name)
 	return _layouts.get_child(0) as DialogGUILayout
 
 
