@@ -70,6 +70,10 @@ func _on_InkRunner_on_dialog_paragraph_received(paragraph: String,
 		_last_talking_actor.is_shadow_visible = false
 	_last_talking_actor = actor
 	actor.is_shadow_visible = true;
+	if humor_id == "none":
+		actor.talk(paragraph, actor.current_humor_id)
+	else:
+		actor.talk(paragraph, humor_id)
 	var pos := actor.get_dialog_box_position(Actor.DialogBoxPosition.Right)
 	_dialog_box.visible = true
 	_dialog_box.rect_global_position = pos.rect_global_position

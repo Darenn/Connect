@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://gui/dialog_gui/actor/actor.gd" type="Script" id=1]
 [ext_resource path="res://gameplay/entities/characters/amaryllis/textures/angry/amaryllis_angry_base.png" type="Texture" id=2]
 [ext_resource path="res://gui/dialog_gui/dialog_box/dialog_box.tscn" type="PackedScene" id=3]
 [ext_resource path="res://shaders/material_colored_shadow.tres" type="Material" id=4]
 [ext_resource path="res://gameplay/entities/characters/amaryllis/textures/angry/amaryllis_angry_eye_closed.png" type="Texture" id=5]
+[ext_resource path="res://gameplay/entities/characters/amaryllis/textures/angry/amaryllis_angry_mouth_open.png" type="Texture" id=6]
 
 [node name="Actor" type="Control"]
 anchor_right = 1.0
@@ -16,8 +17,11 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-blink_time = Vector2( 0.2, 0.4 )
+blink_time = Vector2( 0.1, 0.4 )
 blink_interval = Vector2( 1, 4 )
+talk_time = Vector2( 0.1, 0.6 )
+talk_interval = Vector2( 0.2, 1 )
+max_talking_words = 4
 
 [node name="Texture" type="TextureRect" parent="."]
 margin_right = 40.0
@@ -42,6 +46,16 @@ __meta__ = {
 }
 
 [node name="BlinkingTimer" type="Timer" parent="Eyes"]
+
+[node name="Mouth" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TalkingTimer" type="Timer" parent="Mouth"]
 
 [node name="DialogBoxPositions" type="Control" parent="."]
 visible = false
